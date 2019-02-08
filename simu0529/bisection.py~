@@ -1,0 +1,16 @@
+#二分法
+# x^2 - 2 = 0 の解
+
+small = 0.0
+big   = 2.0
+
+for i in range(10) :
+    x = abs((small+big)/2)
+    if   2 < x**2 :
+        big   = x
+    elif x**2 < 2 :
+        small = x
+    else :
+        break;
+    print("x"+str(i)+" : "+str(x))
+    

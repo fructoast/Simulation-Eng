@@ -1,0 +1,22 @@
+#はさみうち法
+# x^2 - 2 = 0 の解
+
+small = 0.0
+big   = 2.0
+
+
+for i in range(10) :
+    fanc_s    =      small**2 - 2
+    fanc_b    =        big**2 - 2
+    gradient_x = (fanc_b*small - fanc_s*big)/(fanc_b - fanc_s)
+
+    fanc_grax = gradient_x**2 - 2
+    if  fanc_grax*fanc_s <= 0 :
+        #next_small = small
+        big = gradient_x
+    else :
+        small = gradient_x
+        #next_big = big
+
+    print("x"+str(i)+" : "+str(gradient_x))
+    
