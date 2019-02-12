@@ -32,5 +32,6 @@ f.append(expand(ylist[0][4]*(x+i[1])*(x+i[2])*(x+i[3])*(x+i[0]) / div))
 fadd = expand(f[0]+f[1]+f[2]+f[3]+f[4])
 print(fadd)
 
+fadd = 3.32419687592101*x*x*x*x - 0.00854700854700856*x*x*x - 4.27932508104922*x*x + 0.00213675213675213*x + 1.0
 plt.plot(xlist[0],fadd)
 plt.show()
